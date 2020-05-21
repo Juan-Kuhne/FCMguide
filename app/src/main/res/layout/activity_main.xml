@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffcc">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite sua idade: "
+            android:textSize="25dp"
+            android:layout_marginTop="30sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/txtIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Idade"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="80sp"
+            android:layout_marginRight="80sp"
+            android:layout_marginTop="20sp"/>
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcular"
+            android:text="Calcular"
+            android:textAlignment="center"
+            android:layout_marginLeft="155sp"
+            android:layout_marginRight="155sp"
+            android:layout_marginTop="30sp"/>
+    </LinearLayout>
+
+</FrameLayout>
